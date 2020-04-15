@@ -1,0 +1,43 @@
+{
+  "name": "solo-project",
+  "description": "A Crud app to help apply for jobs ",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "author": "MarcusValverde",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^4.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcusvalverde/solo-project.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/marcusvalverde/solo-project/issues"
+  },
+  "homepage": "https://github.com/marcusvalverde/solo-project#readme"
+}

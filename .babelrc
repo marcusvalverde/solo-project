@@ -1,0 +1,5 @@
+// specify all the presets we want to use when we go to compile 
+{
+    "presets": ["@babel/env","@babel/react"] 
+}
+// because we are usuing babel we can use " import key words" due to them being es6 
