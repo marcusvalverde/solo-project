@@ -1,0 +1,46 @@
+body {
+    background-color:#f0ead6;
+}
+h1{
+    text-align: center;
+}
+.static-wrap{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    align-content: space-between; 
+}
+.totalBox{
+    margin-right:40px; 
+}
+.card-wrap{
+    display:grid; 
+    /* justify-content: center;
+    align-items: center;
+    align-content: space-around; */
+    grid-template-columns: 350px 350px 350px;
+    justify-content: center;
+
+}
+.form{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    align-content: space-between; 
+    flex-direction: column;
+}
+.card{
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  margin-right:2rem;
+  background-color: honeydew;
+  padding:.5rem;
+}
+.card-btn{
+    margin-top:1rem;
+}
+.total{
+text-decoration: underline; 
+}

@@ -20,8 +20,10 @@ module.exports = {
         // this is good for react but we still want our backend API's to handle route req to server
         // when the client req API route the 8080 will send it to LH 3000 ( where our server lives )
             proxy: {
-            '/build': 'http://localhost:3000'
+            '/build/': 'http://localhost:3000'
             },
+            historyApiFallback:true, // tm blog lol 
+          
             publicPath: '/' // used for dev server. Instead of usuing file in fle tree we have a public path that helps us connnect our files serverd from WP memory instead of disk. 
             // currently our Dev server folder (client) now lives in the WPD memory so we need to pull info from there 
     },
@@ -39,14 +41,12 @@ module.exports = {
               }
             },
             { // need to npm download all loaders as well as npm node-Sass
-                test: /\.s[ac]ss$/i, // we only want to compile SCSS
+                test: /.(css|scss)$/, // we only want to compile SCSS
                 use: [
                     // Creates `style` nodes from JS strings
                     'style-loader',
                     // Translates CSS into CommonJS
                     'css-loader',
-                    // Compiles Sass to CSS
-                    'sass-loader',
                 ]
               }
           ]
@@ -56,5 +56,4 @@ module.exports = {
               template: './index.html',
             }),
           ]
-        // resolve? js and jsx 
 }
